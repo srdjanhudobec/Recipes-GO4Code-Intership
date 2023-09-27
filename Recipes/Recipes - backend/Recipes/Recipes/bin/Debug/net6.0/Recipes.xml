@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Recipes</name>
+    </assembly>
+    <members>
+        <member name="M:Recipes.Controllers.AuthController.Login(Recipes.DTOs.Helpers.LoginUserRequest)">
+            <summary>
+            Login
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Recipes.Controllers.AuthController.Register(Recipes.DTOs.Post.User.UserPostRequest)">
+            <summary>
+            Register user
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Recipes.Controllers.IngredientController.getAllIngredients">
+            <summary>
+            Get all ingredients (can be done only by admin)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Recipes.Controllers.IngredientController.createIngredient(Recipes.DTOs.Post.Ingredient.IngredientPostRequest)">
+            <summary>
+            Create ingredient (can be done only by admin)
+            </summary>
+            <param name="ingredient"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Recipes.Controllers.IngredientController.deleteIngredient(System.String)">
+            <summary>
+            Delete ingredient (can be done only by admin)
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Recipes.Controllers.RecipeController.getAllRecipes">
+            <summary>
+            Get all recipes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Recipes.Controllers.RecipeController.getSearchedRecipes(System.String,System.String)">
+            <summary>
+            Get recipe by searching
+            </summary>
+            <param name="name"></param>
+            <param name="ingredientname"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Recipes.Controllers.RecipeController.createRecipe(Recipes.DTOs.Post.Recipe.RecipePostRequest)">
+            <summary>
+            Create recipe (can be done only with cook)
+            </summary>
+            <param name="recipe"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Recipes.Controllers.RecipeController.deleteRecipe(System.String)">
+            <summary>
+            Delete recipe (can be done only with cook) and Admin
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Recipes.Controllers.UserController.RegisterCook(Recipes.DTOs.Post.User.UserPostRequest)">
+            <summary>
+            Register cook (can be done only by admin)
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Recipes.Controllers.UserController.getAllCooks">
+            <summary>
+            Get all cooks (can be done only by admin)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Recipes.Controllers.UserController.RegisterAdmin(Recipes.DTOs.Post.User.UserPostRequest)">
+            <summary>
+            Register admin (ovo predstavlja simulaciju za rucno unosenje admina u bazu,radi se preko kontrolera iskljucivo jer mora sam Identity da generise podatke i rolu admina, nigde se na frontu ovo nece pozivati)
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Recipes.Controllers.UserController.bookmarkRecipe(Recipes.DTOs.UserBookmark.UserBookmarkPostRequest)">
+            <summary>
+            Bookmark recipe (can be done only by user)
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Recipes.Controllers.UserController.getBookmarkedRecipes">
+            <summary>
+            Get bookmarked recipes (can be done only by user)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Recipes.Migrations.Init">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.Init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.Init.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.Init.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Recipes.Migrations.InitRemoveCooks">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.InitRemoveCooks.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.InitRemoveCooks.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.InitRemoveCooks.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Recipes.Migrations.NoEnum">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.NoEnum.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.NoEnum.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.NoEnum.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Recipes.Migrations.Update">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.Update.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.Update.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.Update.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Recipes.Migrations.Update2">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.Update2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.Update2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.Update2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Recipes.Migrations.Brisanje">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.Brisanje.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.Brisanje.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.Brisanje.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Recipes.Migrations.UpdateIngredient">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.UpdateIngredient.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.UpdateIngredient.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.UpdateIngredient.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Recipes.Migrations.UpdateIngredient2">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.UpdateIngredient2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.UpdateIngredient2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.UpdateIngredient2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Recipes.Migrations.BookMark2">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.BookMark2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.BookMark2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.BookMark2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Recipes.Migrations.BookMarkUnique">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.BookMarkUnique.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.BookMarkUnique.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.BookMarkUnique.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Recipes.Migrations.BookMarkUpdate">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.BookMarkUpdate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.BookMarkUpdate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Recipes.Migrations.BookMarkUpdate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

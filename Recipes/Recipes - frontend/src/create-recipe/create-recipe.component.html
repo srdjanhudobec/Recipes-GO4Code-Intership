@@ -1,0 +1,16 @@
+<div class="form">
+
+<label for="name">Name: </label>
+<input type="text" [(ngModel)]="name">
+<label for="quantity">Ingredients:</label>
+<label for="ingredientName">Ingredient name:</label>
+<input type="text" [(ngModel)]="ingredientName">
+<label for="quantity">Quantity</label>
+<input type="text" [(ngModel)]="quantity">
+<br>
+<label for="description">Description: </label><br>
+<input type="text" [(ngModel)]="description"><br>
+<br>
+<button (click)="createOnSubmit()">Add recipe</button>
+
+</div>

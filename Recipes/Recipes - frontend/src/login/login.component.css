@@ -1,0 +1,15 @@
+.form{
+    width: 200px;
+    height: 600px;
+    margin-left: 30px;
+}
+button{
+    margin-top: 20px;
+}
+body{
+    background-image: url("../../images/login.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x:right ;
+    background-position-y:bottom;
+}

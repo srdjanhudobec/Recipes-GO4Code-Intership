@@ -1,0 +1,15 @@
+<h1>Cooks: </h1>
+<div class="cook" *ngFor="let cook of cooks">
+    <h3>Cook: </h3>
+    <mat-list>
+    <mat-list-item>
+        <span matListItemTitle>Cook id: {{cook.id}}</span>
+    </mat-list-item>
+    <mat-list-item>Cook username: {{cook.username}}</mat-list-item>
+    <mat-list-item>Cook email: {{cook.email}}</mat-list-item>
+    </mat-list>
+    <!-- <h2>Cook id: {{cook.id}}</h2>
+    <h2>Cook username: {{cook.username}}</h2>
+    <h2>Cook email: {{cook.email}}</h2> -->
+</div>
+<button mat-raised-button color="accent" *ngIf="!clicked" (click)="getAllCooksOnSubmit()">Get all cooks</button>

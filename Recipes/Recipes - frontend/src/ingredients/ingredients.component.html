@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<h1>Ingredients: </h1>
+<div class="ingredient" *ngFor="let ingredient of ingredients">
+    <h3>Ingredient: </h3>
+    <mat-list>
+    <mat-list-item>
+        <span matListItemTitle>Ingredient id: {{ingredient.id}}</span>
+    </mat-list-item>
+    <mat-list-item>Ingredient name: {{ingredient.name}}</mat-list-item>
+    <mat-list-item>Ingredient measurement unit: {{ingredient.measurementUnit}}</mat-list-item>
+    </mat-list>
+</div>

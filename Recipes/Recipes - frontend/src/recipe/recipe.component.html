@@ -1,0 +1,24 @@
+<h1>All recipes: </h1>
+<div *ngIf="user" class="bookmark">
+    <label for="recipeName">Enter name of recipe to bookmark: </label>
+    <input type="text" [(ngModel)]="recipeName">
+    <button (click)="onBookmarkSubmit()">Bookmark</button></div>
+<button *ngIf="user" class="show" (click)="getBookmarkSubmit()">Show only bookmarked recepies. </button>
+<div class="form">
+    <h2>Search recipe: </h2>
+    <label for="name">Recipe name: </label>
+    <input type="text" [(ngModel)]="name">
+    <label for="ingredientSearch">Ingredient name: </label>
+    <input type="text" [(ngModel)]="ingredientSearch">
+    <button mat-raised-button color="accent" (click)="searchOnSubmit()">Search</button>
+</div>
+<div class="recipe" *ngFor="let recipe of recipes">
+    <h2>Recipe name: {{recipe.name}}</h2>
+    <h3>Ingredients: </h3>
+    <div class="ingredient" *ngFor="let ingredient of recipe.ingredients">
+        <h4>Ingredient name: {{ingredient.ingredientName}}</h4>
+        <h4>Quantity: {{ingredient.quantity}}</h4>
+    </div>
+    <h3>Description: {{recipe.description}}</h3>
+    <h5>Creator: {{recipe.creatorUsername}}</h5>
+</div>

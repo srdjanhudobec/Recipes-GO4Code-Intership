@@ -1,0 +1,59 @@
+.recipe{
+    background-image: url("../../images/recipe.jpg");
+    width: 400px;
+    height: 500px;
+    background-size: contain;
+    border: 2px solid white;
+    margin-left: 580px;
+}
+h2{
+    margin-left: 34px;
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+h3{
+    margin-left: 60px;
+    font-weight: bold;
+    font-size: 20px;
+}
+h4{
+    margin-left: 60px;
+    font-size: 12px;
+}
+h5{
+    margin-left: 60px;
+    color: red;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+button{
+    float: right;
+    margin-right: 60px;
+}
+.bookmark{
+    float: left;
+    width: 200px;
+    height: 600px;
+    margin-left: 30px;
+    position: fixed;
+}
+button{
+    margin-top: 20px;
+    
+}
+.show{
+    position: fixed;
+    margin-left: 1200px;
+}
+.form{
+    float: left;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 150px;
+    width: 200px;
+    height: 400px;
+    position: fixed;
+}
